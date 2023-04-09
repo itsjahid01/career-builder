@@ -1,0 +1,23 @@
+[
+    {
+      "jobCategoryLogo": "https://example.com/images/category1.png",
+      "categoryName": "Account & Finance",
+      "availableJobs": "300 Jobs Available"
+    },
+    {
+        "jobCategoryLogo": "https://example.com/images/category1.png",
+        "categoryName": "Account & Finance",
+        "availableJobs": "300 Jobs Available"
+    },
+    {
+        "jobCategoryLogo": "https://example.com/images/category1.png",
+        "categoryName": "Account & Finance",
+        "availableJobs": "300 Jobs Available"
+    },
+    {
+        "jobCategoryLogo": "https://example.com/images/category1.png",
+        "categoryName": "Account & Finance",
+        "availableJobs": "300 Jobs Available"
+    }
+  ]
+  
