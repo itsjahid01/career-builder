@@ -9,6 +9,8 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
+import vector from "../assets/All Images/Vector.png";
+import vector1 from "../assets/All Images/Vector-1.png";
 
 const Statistics = () => {
   const data = [
@@ -47,8 +49,14 @@ const Statistics = () => {
   ];
   return (
     <div>
-      <div className="bg-[#F9F8FF] text-lg text-center font-bold p-7 ">
-        <p>Statistics</p>
+      <div className="bg-[#F9F8FF] text-xl text-center font-bold flex justify-between items-center">
+        <div className="">
+          <img src={vector} alt="" />
+        </div>
+        <p className="">Statistics</p>
+        <div className="">
+          <img src={vector1} alt="" />
+        </div>
       </div>
       <div className="p-8">
         <AreaChart
