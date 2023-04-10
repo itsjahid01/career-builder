@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.btn-primary{
+    @apply text-white px-5 py-3 bg-[#9873FF] rounded-md;
+}
