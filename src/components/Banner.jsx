@@ -3,7 +3,7 @@ import person from "../assets/All Images/P3OLGJ1 copy 1.png";
 
 const Banner = () => {
   return (
-    <header className="md:flex justify-between items-center p-5 mx-auto bg-[#F9F9FF]">
+    <header className="md:flex justify-between items-center p-5 mb-5 mx-auto bg-[#F9F9FF]">
       <div className="md:w-1/2 p-5">
         <p className="text-5xl mb-5 font-bold">
           One Step <br /> Closer To Your
