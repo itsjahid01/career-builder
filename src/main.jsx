@@ -7,6 +7,7 @@ import ErrorPage from "./components/ErrorPage";
 import Home from "./components/Home";
 import Statistics from "./components/Statistics";
 import Blog from "./components/Blog";
+import AppliedJobs from "./components/AppliedJobs";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/appliedJobs",
+        element: <AppliedJobs></AppliedJobs>,
       },
       {
         path: "/blog",

@@ -3,9 +3,10 @@ import React, { useEffect, useState } from "react";
 import Banner from "./Banner";
 import { useLoaderData } from "react-router-dom";
 import Category from "./Category";
+import FeaturedJobs from "./FeaturedJobs";
 
 const Home = () => {
-  const data = useLoaderData();
+  const jobs = useLoaderData();
   const [categorys, setCategorys] = useState([]);
   // console.log(categorys);
 
@@ -40,7 +41,11 @@ const Home = () => {
           need. Its your future
         </p>
       </div>
-      <div>{}</div>
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 p-8">
+        {jobs.map((job) => (
+          <FeaturedJobs key={job.id} job={job}></FeaturedJobs>
+        ))}
+      </div>
     </div>
   );
 };
