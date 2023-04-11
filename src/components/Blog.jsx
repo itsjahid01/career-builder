@@ -9,7 +9,7 @@ const Blog = () => {
         <div className="">
           <img src={vector} alt="" />
         </div>
-        <p className="">Blogs</p>
+        <p className="text-2xl">Blogs</p>
         <div className="">
           <img src={vector1} alt="" />
         </div>

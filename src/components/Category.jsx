@@ -1,15 +1,25 @@
 import React from "react";
+import SingleCategory from "./SingleCategory";
 
 const Category = (props) => {
-  const { jobCategoryLogo, categoryName, availableJobs } = props.category;
-  //   console.log(props);
+  // console.log(props.categorys);
   return (
-    <div className="bg-[#FAF8FF] p-5 rounded-md">
-      <div className="bg-[#EDEEFF] mb-3 p-3 w-20 rounded-md ">
-        <img src={jobCategoryLogo} alt="" className="mx-auto" />
+    <div>
+      <div className="text-center p-8">
+        <p className="text-2xl font-bold mb-3 ">Job Category List</p>
+        <p>
+          Explore thousands of job opportunities with all the information you
+          need. Its your future
+        </p>
       </div>
-      <p className="text-md font-bold">{categoryName}</p>
-      <p>{availableJobs}</p>
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 mx-14">
+        {props.categorys.map((category) => (
+          <SingleCategory
+            key={category.id}
+            category={category}
+          ></SingleCategory>
+        ))}
+      </div>
     </div>
   );
 };

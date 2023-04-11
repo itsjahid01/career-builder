@@ -9,7 +9,7 @@ const AppliedJobs = () => {
         <div className="">
           <img src={vector} alt="" />
         </div>
-        <p className="">Applied Jobs</p>
+        <p className="text-2xl">Applied Jobs</p>
         <div className="">
           <img src={vector1} alt="" />
         </div>

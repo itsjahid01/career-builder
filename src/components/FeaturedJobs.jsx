@@ -1,38 +1,23 @@
 import React from "react";
-import lIcon from "../assets/Icons/Location Icon.png";
-import mIcon from "../assets/Icons/Frame.png";
+import Job from "./Job";
 
 const FeaturedJobs = (props) => {
-  console.log(props.job);
-  const {
-    id,
-    companyLogo,
-    companyName,
-    jobTitle,
-    salary,
-    remoteOrOnsite,
-    location,
-    fulltimeOrPartTime,
-  } = props?.job;
+  //   console.log(props.job.fulltimeOrPartTime);
+
   return (
-    <div className="border p-5 border-gray-300 rounded-lg">
-      <img className="w-40" src={companyLogo} alt="" />
-      <p>{jobTitle}</p>
-      <p>{companyName}</p>
-      <div className="flex">
-        <div>{remoteOrOnsite}</div>
-        <div>{fulltimeOrPartTime}</div>
+    <div className=" mt-8 mb-5">
+      <div className="text-center p-8">
+        <p className="text-2xl font-bold mb-3 ">Featured Jobs</p>
+        <p>
+          Explore thousands of job opportunities with all the information you
+          need. Its your future
+        </p>
       </div>
-      <div className="flex">
-        <div>
-          <img src={lIcon} alt="" />
-          <span>{location}</span>
-        </div>
-        <div>
-          <img src={mIcon} alt="" /> <span>{salary}</span>
-        </div>
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 p-5">
+        {props.jobs.map((job) => (
+          <Job key={job.id} job={job}></Job>
+        ))}
       </div>
-      <button className="btn-primary">View Details</button>
     </div>
   );
 };

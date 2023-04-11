@@ -21,31 +21,10 @@ const Home = () => {
       <Banner></Banner>
 
       {/* job category section  */}
-      <div className="text-center p-8">
-        <p className="text-2xl font-bold mb-3 ">Job Category List</p>
-        <p>
-          Explore thousands of job opportunities with all the information you
-          need. Its your future
-        </p>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 mx-14">
-        {categorys.map((category) => (
-          <Category key={category.categoryName} category={category}></Category>
-        ))}
-      </div>
+      <Category categorys={categorys}></Category>
+
       {/* featured job section  */}
-      <div className="text-center p-8">
-        <p className="text-2xl font-bold mb-3 ">Featured Jobs</p>
-        <p>
-          Explore thousands of job opportunities with all the information you
-          need. Its your future
-        </p>
-      </div>
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 p-8">
-        {jobs.map((job) => (
-          <FeaturedJobs key={job.id} job={job}></FeaturedJobs>
-        ))}
-      </div>
+      <FeaturedJobs jobs={jobs}></FeaturedJobs>
     </div>
   );
 };

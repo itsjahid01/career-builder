@@ -15,35 +15,35 @@ import vector1 from "../assets/All Images/Vector-1.png";
 const Statistics = () => {
   const data = [
     {
-      name: "A1",
+      name: "Assignment 1",
       marks: 57,
     },
     {
-      name: "A2",
+      name: "Assignment 2",
       marks: 60,
     },
     {
-      name: "A3",
+      name: "Assignment 3",
       marks: 60,
     },
     {
-      name: "A4",
+      name: "Assignment 4",
       marks: 60,
     },
     {
-      name: "A5",
+      name: "Assignment 5",
       marks: 60,
     },
     {
-      name: "A6",
+      name: "Assignment 6",
       marks: 58,
     },
     {
-      name: "A7",
+      name: "Assignment 7",
       marks: 60,
     },
     {
-      name: "A8",
+      name: "Assignment 8",
       marks: 60,
     },
   ];
@@ -53,7 +53,7 @@ const Statistics = () => {
         <div className="">
           <img src={vector} alt="" />
         </div>
-        <p className="">Statistics</p>
+        <p className="text-2xl">Statistics</p>
         <div className="">
           <img src={vector1} alt="" />
         </div>
@@ -61,8 +61,8 @@ const Statistics = () => {
       <div className="p-8">
         <AreaChart
           className="mx-auto"
-          width={700}
-          height={300}
+          width={950}
+          height={400}
           data={data}
           margin={{
             top: 10,
