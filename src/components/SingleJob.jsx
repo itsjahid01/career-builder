@@ -1,8 +1,12 @@
 import React from "react";
 import lIcon from "../assets/Icons/Location Icon.png";
 import mIcon from "../assets/Icons/Frame.png";
+import { useNavigate } from "react-router-dom";
 
-const Job = (props) => {
+const SingleJob = (props) => {
+  const navigate = useNavigate();
+  // console.log(navigate);
+
   const {
     id,
     companyLogo,
@@ -36,9 +40,14 @@ const Job = (props) => {
           <span>Salary: {salary}</span>
         </div>
       </div>
-      <button className="btn-primary">View Details</button>
+      <button
+        onClick={() => navigate(`jobDetails/${id}`)}
+        className="btn-primary"
+      >
+        View Details
+      </button>
     </div>
   );
 };
 
-export default Job;
+export default SingleJob;

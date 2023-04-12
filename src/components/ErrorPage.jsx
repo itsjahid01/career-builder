@@ -3,7 +3,7 @@ import { Link, useRouteError } from "react-router-dom";
 
 const ErrorPage = () => {
   const error = useRouteError();
-  console.log(error);
+  // console.log(error);
   const { status, data, statusText } = error;
 
   return (
@@ -11,7 +11,7 @@ const ErrorPage = () => {
       <div className="text-center">
         <p className="text-7xl font-bold  ">{status}</p>
         <p className="text-3xl font-semibold text-yellow-300">
-          {statusText} !!
+          Page {statusText} !!
         </p>
         <p className="text-2xl text-red-600">{data}</p>
         <Link to={"/"}>

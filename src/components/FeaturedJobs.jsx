@@ -1,8 +1,10 @@
 import React from "react";
-import Job from "./Job";
+import SingleJob from "./SingleJob";
 
 const FeaturedJobs = (props) => {
-  //   console.log(props.job.fulltimeOrPartTime);
+  // console.log(props);
+  const jobs = props.jobs;
+  // console.log(jobs);
 
   return (
     <div className=" mt-8 mb-5">
@@ -14,9 +16,12 @@ const FeaturedJobs = (props) => {
         </p>
       </div>
       <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 p-5">
-        {props.jobs.map((job) => (
-          <Job key={job.id} job={job}></Job>
+        {jobs.slice(0, 4).map((job) => (
+          <SingleJob key={job.id} job={job}></SingleJob>
         ))}
+      </div>
+      <div className="mx-auto w-32">
+        <button className="mt-5 btn-primary">See All Jobs</button>
       </div>
     </div>
   );
