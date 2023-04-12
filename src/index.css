@@ -5,3 +5,6 @@
 .btn-primary{
     @apply text-white px-5 py-2 bg-[#9873FF] rounded-md;
 }
+.active{
+    @apply font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-blue-400
+}
